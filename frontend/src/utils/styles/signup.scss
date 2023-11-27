@@ -1,0 +1,266 @@
+@import "../partials/mixins";
+
+
+
+.signupText {
+    margin: -.6rem 0rem;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+    h2 {
+        font-size: 51px;
+        font-weight: 400;
+    }
+
+    p {
+        margin: 1rem 0rem;
+        line-height: 2rem;
+    }
+
+    h3 {
+        margin: 4rem 0rem 0rem;
+    }
+
+    .mobileText {
+        display: none;
+        
+      }
+}
+
+.filterButton {
+        
+    .filter {
+        color: #272727;
+    }
+  }
+
+.logoLarge {
+    margin: 3rem 0rem 3.5rem;
+}
+
+.signupForm {
+    line-height: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .inputSection {
+        display: flex;
+        flex-direction: row;
+        gap: 12rem;
+        
+        .form-group {
+            
+            input {
+                background-color: #F2F2F2;
+                border: none;
+                border-radius: 5px;
+                width: 333px;
+                height: 46px;
+                margin-bottom: 1.5rem;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 1rem;
+                font-weight: 400;
+                padding: 0rem 1rem;
+                
+            }
+        }
+    }
+    
+    .buttonWrapper {
+        display: flex;
+        justify-content: center;
+        margin: 2.6rem 0rem;
+    }
+}
+
+.toLoginText {
+    font-family: 'Kumbh Sans', sans-serif;
+    width: 50%;
+    margin: 9rem 0rem 5rem;
+    line-height: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #272727;
+    
+    a {
+        text-decoration: none;
+        font-weight: 500;
+        line-height: 3.5rem;
+        color: #272727;
+    }
+
+    h4 {
+        color: #272727;
+        text-decoration: none;
+        font-weight: 600;
+    }
+}    
+
+
+@include tablet {
+    .signupText {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 1.5rem;      
+    
+        h2 {
+            margin: 1rem 0rem 0rem 0rem;
+            font-size: 1.7rem;
+            font-weight: 400;
+        }
+    
+        p {
+            font-size: 1rem;
+            line-height: 1.2rem;
+        }
+
+        .mobileText {
+            display: block;
+            font-weight: 500;
+            font-size: 1.2rem;  
+          }
+    
+      
+    }
+    
+    .logoLarge {
+        display: none;
+    }
+    
+    .signupForm {
+        // line-height: 3rem;
+      
+        
+        .inputSection {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0rem;
+          
+        }
+        
+        .buttonWrapper {
+            display: flex;
+            justify-content: center;
+            margin: 2.6rem 0rem;
+        }
+    }
+    
+    .toLoginText {
+        width: 80%;
+        margin: 0rem 0rem 0rem;
+        line-height: 0rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.1rem;
+        font-weight: 300;
+        color: #272727;
+        
+        a {
+            text-decoration: none;
+            font-weight: 500;
+            color: #272727;
+        }
+    
+        h4 {
+            color: #272727;
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: .5rem;
+            font-size: 1.2rem;
+        }
+    }    
+}
+
+
+@include mobile {
+    .signupText {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 1.5rem;      
+    
+        h2 {
+            margin: 1rem 0rem 0rem 0rem;
+            font-size: 1.7rem;
+            font-weight: 400;
+        }
+    
+        p {
+            font-size: 1rem;
+            line-height: 1.2rem;
+        }
+
+        .mobileText {
+            display: block;
+            font-weight: 500;
+            font-size: 1.2rem;   
+          }
+    
+      
+    }
+    
+    .logoLarge {
+        margin: 3rem 0rem 3.5rem;
+        display: none;
+    }
+    
+    .signupForm {
+        line-height: 3rem;
+      
+        
+        .inputSection {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0rem;
+          
+        }
+        
+        .buttonWrapper {
+            display: flex;
+            justify-content: center;
+            margin: 2.6rem 0rem;
+        }
+    }
+    
+    .toLoginText {
+        width: 80%;
+        margin: 0rem 0rem 0rem;
+        line-height: 0rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 1.1rem;
+        font-weight: 300;
+        color: #272727;
+        
+        a {
+            text-decoration: none;
+            font-weight: 500;
+            color: #272727;
+        }
+    
+        h4 {
+            color: #272727;
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: .5rem;
+            font-size: 1.2rem;
+        }
+    }    
+}

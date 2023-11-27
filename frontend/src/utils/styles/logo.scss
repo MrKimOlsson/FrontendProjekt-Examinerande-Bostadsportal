@@ -1,0 +1,30 @@
+@import '../partials/mixins';
+
+.smallLogo {
+        
+    img {
+        margin-top: 2rem;
+        width: 276px;
+        
+    }
+}
+
+@include tablet {
+    .smallLogo {
+        
+        img {
+            width: 246px;
+            
+        }
+    }
+}
+
+@include mobile {
+    .smallLogo {
+        
+        img {
+            width: 246px;
+            
+        }
+    }
+}

@@ -1,0 +1,262 @@
+@import "../partials/mixins";
+
+
+.acceptPaymentText {
+    width: 50%;
+    line-height: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    h2 {
+        font-size: 3rem;
+        font-weight: 400;
+        margin: 0rem 0rem 3rem;
+    }
+
+    p {
+        line-height: 1.7rem;
+    }
+}
+
+.paymentForm {
+
+    h3{
+        font-weight: 600;
+        font-size: 1rem;
+        margin: 1rem 0rem 1rem;
+    }
+
+    .inputSection {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 0rem 1rem;
+        gap: .5rem;
+        
+        
+        .column {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: .5rem;
+            
+            input {
+                width: 100%;
+                padding-left: 1.5rem;
+                border-radius: 5px;
+                border: none;
+                margin-bottom: 1rem;
+                background-color: #F2F2F2;
+                height: 46px;
+                font-size: 1rem;
+                color: #00000067;
+                
+             
+            }
+        }
+        
+        .row {
+            display: flex;
+            flex-direction: row;
+            
+
+            input {
+                width: 100%;
+                padding-left: 1rem;
+                border-radius: 5px;
+                border: none;
+                margin-bottom: 1rem;
+                background-color: #F2F2F2;
+                height: 46px;
+                font-size: 1rem;
+                width: 12rem;              
+                
+            }
+        }
+    }
+
+    .buttonWrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+
+        button {
+            width: 136px;
+            height: 38px;
+        }
+    }
+}
+
+
+@include tablet {
+
+    .acceptPaymentText {
+        width: 80%;
+        line-height: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        h2 {
+            font-size: 2.2rem;
+            font-weight: 400;
+            margin: 0rem 0rem 2rem;
+        }
+    
+        p {
+            line-height: 1.7rem;
+        }
+    }
+    
+    .paymentForm {
+        
+        h3{
+            font-weight: 600;
+            font-size: 1rem;
+            margin: 1rem 0rem 1rem;
+        }
+    
+        .inputSection {
+            display: flex;
+            flex-direction: column;
+            margin: 1rem 0rem 1rem;
+            gap: .5rem;
+            
+            .column {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                gap: .5rem;
+                
+                input {
+                    width: 100%;
+                    padding-left: 1rem;
+                    border-radius: 5px;
+                    border: none;
+                    margin-bottom: 1rem;
+                    background-color: #F2F2F2;
+                    height: 46px;
+                    font-size: 1rem;
+                    color: #00000067;
+                }
+            }
+            
+            .row {
+                display: flex;
+                flex-direction: row;                
+                align-items: center;
+                
+                input {
+                    padding-left: 1rem;
+                    border-radius: 5px;
+                    border: none;
+                    margin-bottom: 1rem;
+                    background-color: #F2F2F2;
+                    height: 46px;
+                    font-size: 1rem;
+                    width: 40vw;          
+                }
+            }
+        }
+    
+        .buttonWrapper {
+            display: flex;
+            justify-content: center;
+            margin-top: 3rem;
+    
+            button {
+                width: 136px;
+                height: 38px;
+            }
+        }
+    }
+}
+
+
+@include mobile {
+
+    
+    .acceptPaymentText {
+        width: 80%;
+        line-height: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        h2 {
+            font-size: 25px;
+            font-weight: 400;
+            margin: 0rem 0rem 2rem;
+        }
+    
+        p {
+            line-height: 1.7rem;
+        }
+    }
+    
+    .paymentForm {
+        
+        h3{
+            font-weight: 600;
+            font-size: 1rem;
+            margin: 1rem 0rem 1rem;
+        }
+    
+        .inputSection {
+            display: flex;
+            flex-direction: column;
+            margin: 1rem 0rem 1rem;
+            gap: .5rem;
+            
+            .column {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                gap: .5rem;
+                
+                input {
+                    width: 100%;
+                    padding-left: 1rem;
+                    border-radius: 5px;
+                    border: none;
+                    margin-bottom: 1rem;
+                    background-color: #F2F2F2;
+                    height: 46px;
+                    font-size: 1rem;
+                    color: #00000067;
+                }
+            }
+            
+            .row {
+                display: flex;
+                flex-direction: row;                
+                align-items: center;
+                
+                input {
+                    padding-left: 1rem;
+                    border-radius: 5px;
+                    border: none;
+                    margin-bottom: 1rem;
+                    background-color: #F2F2F2;
+                    height: 46px;
+                    font-size: 1rem;
+                    width: 40vw;          
+                }
+            }
+        }
+    
+        .buttonWrapper {
+            display: flex;
+            justify-content: center;
+            margin-top: 3rem;
+    
+            button {
+                width: 136px;
+                height: 38px;
+            }
+        }
+    }
+}

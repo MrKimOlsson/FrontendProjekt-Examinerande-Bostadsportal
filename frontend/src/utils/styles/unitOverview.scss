@@ -1,0 +1,159 @@
+@import '../partials/mixins';
+
+.unitInfoCardContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+
+    .logo {
+        width: 104px;
+    }
+
+    .unitInfoCard{
+        width: 404px;
+        background-color: #E9E9E9;
+        border-radius: 5px;
+        padding: 2rem 1rem;
+        
+        .title {
+            margin: 0rem 0rem 1.5rem 0rem;
+        }
+        
+        .text{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 2rem;
+
+            button{
+                width: 140px;
+            }
+        }
+    }
+}
+
+@include tablet {
+
+    .unitInfoCardContainer {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    
+        .logo {
+            width: 104px;
+        }
+    
+        .unitInfoCard{
+            width: 350px;
+            background-color: #E9E9E9;
+
+            
+            .title {
+                margin: 0rem 0rem 1.5rem 0rem;
+            }
+            
+            .text{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+    
+            .buttons {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                margin-top: 2rem;
+    
+                button{
+                    width: 140px;
+                }
+            }
+        }
+    }
+}
+
+@include mobile {
+
+    .unitInfoCardContainer {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    
+        .logo {
+            width: 104px;
+        }
+    
+        .unitInfoCard{
+            width: 250px;
+            background-color: #E9E9E9;
+
+            
+            .title {
+                margin: 0rem 0rem 1.5rem 0rem;
+            }
+            
+            .text{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+    
+            .buttons {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                margin-top: 2rem;
+    
+                button{
+                    width: 140px;
+                }
+            }
+        }
+    }
+}
+
+// @include tablet {
+//     .unitInfoCardContainer {
+//         display: flex;
+//         flex-direction: column;
+//         margin-bottom: 1rem;
+    
+//         .logo {
+//             width: 104px;
+//         }
+    
+//         .unitInfoCard{
+//             height: 244px;
+//             background-color: #442e2e;
+//             border-radius: 10px;
+//             padding: 2rem 1rem;
+            
+//             .title {
+//                 margin: 0rem 0rem 1rem 1.5rem;
+//             }
+            
+//             .text{
+//                 display: flex;
+//                 flex-direction: row;
+//                 justify-content: space-between;
+//             }
+    
+//             .buttons {
+//                 display: flex;
+//                 flex-direction: column;
+//                 gap: 1rem;
+//                 margin-top: 2rem;
+    
+//                 button{
+//                     width: 140px;
+//                 }
+//             }
+//         }
+//     }
+// }

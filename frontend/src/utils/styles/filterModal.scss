@@ -1,0 +1,424 @@
+@import '../partials/mixins';
+
+.filter-modal {
+    display: none;
+    position: fixed;
+    overflow: hidden;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+
+    &.open {
+      display: flex;
+    }
+
+    .modal-wrapper {
+        background-color: #fff;
+        width: 683px;
+        overflow-y: auto;
+        border-radius: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    
+        h3 {
+          margin-bottom: 10px;
+      }
+
+      
+      .modal-closeButton-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+
+        .closeButton {
+          width: 50px;
+          height: 50px;
+          cursor: pointer;
+          font-size: 1.2rem;
+          background-color: transparent;
+        }
+      }
+
+      .modal-header {
+        width: 100%;
+        border-bottom: 1px solid #c1c1c1;
+        display: flex;
+        justify-content: center;
+        margin-top: -2rem;
+      }
+    }
+  
+    .modal-content {
+      display: flex;
+      flex-direction: column;
+      border-bottom: 1px solid #c1c1c1;
+      padding-bottom: 2rem;
+      justify-content: flex-start;
+      text-align: left;
+
+      .filterModalButtons {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding: 0rem 0rem 0rem 1.5rem;
+        margin-top: .5rem;
+        row-gap: .5rem;
+      }
+
+      .center {
+        display: flex;
+        justify-content: center;
+        margin-top: .5rem;
+      }
+
+      .unitTypeButton {
+        width: 7.5rem;
+        height: 3rem;
+        border-radius: 0;
+      }
+  
+      .modalButton {
+        background-color: #ffffff;
+        color: #000000;
+        border: 1px solid #c1c1c1;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: #E78121;
+          color: #fff;
+        }
+      }
+      
+      .modalButton.selected {
+        background-color: #E78121;
+          color: #fff;
+      }
+
+      .unitTypeButtonStart {
+        border-radius: 20rem 0rem 0rem 20rem;
+      }
+      .unitTypeButtonEnd {
+        border-radius: 0rem 20rem 20rem 0rem;
+      }
+
+      .amountButton {
+        border-radius: 3rem;
+        color: #000000;
+        background-color: #fff;
+        border: 1px solid #c1c1c1;
+        margin: 0rem .2rem;
+        padding: 0rem 1rem;
+        height: 1.8rem;
+        width: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .modal-text {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem 1.5rem;
+    }
+
+    .filterModalInput{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+
+      .numberInput{
+        border-radius: 10px;
+        border: 1px solid #c1c1c1;
+        height: 2.5rem;
+        width: 15rem;
+        padding: 0rem 1rem;
+      }
+
+      .horisontalDivider {
+        width: 20px;
+        height: 1px;
+        background-color: #c1c1c1;
+      }
+
+      .searchInput-container {
+        background-color: #E78121;
+        margin: 2rem 0rem .5rem; 
+        width: 550px;
+        height: 50px;
+        border-radius: 3rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0rem 1rem 0rem .5rem;
+
+        .searchInput {
+          height: 2.2rem;
+          border: 1px solid #c1c1c1;
+          width: 467px;
+          border-radius: 2rem 0rem 0rem 2rem;
+          padding: 0rem 1rem;
+        }
+
+        .searchIcon {
+          height: 60%;
+          width: 10%;
+          color: #fff;
+        }
+      }
+    }
+
+    .filterCheckbox-wrapper {
+      display: flex;
+      justify-content: flex-start;
+      padding: 0rem 0rem 0rem 1.5rem;
+      gap: 5rem;
+      
+      .column {
+        display: flex;
+        gap: .4em;
+
+        .form-control {
+          display: flex;
+          gap: .5em;
+
+          input{
+            width: 1.2rem;
+            accent-color: #E78121;                     
+          }
+
+          input:before {
+            color: #f6f6f6;
+          }
+
+          input:after {
+            color: #f6f6f6;
+          }
+        }
+      }
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 1.5rem 2rem;
+
+      button {
+        width: 100px;
+      }
+
+      .textButton {
+        background-color: transparent;
+        color: #000000;
+        font-weight: bold;
+        cursor: pointer;
+        height: 1.3rem;
+        border-bottom: 1px solid #000000;
+      }
+    }
+  }
+
+
+
+  @include tablet {
+
+    .filter-modal {
+      width: 100%;
+      height: 100vh;
+ 
+      .modal-wrapper {
+          width: 90%;
+          
+        .modal-closeButton-wrapper {
+          width: 100%;
+          display: flex;
+          justify-content: flex-start;
+  
+          .closeButton {
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            background-color: transparent;
+          }
+        }
+      }
+    
+      .modal-content {
+   
+        .unitTypeButton {
+          width: 20%;
+        }
+      }
+  
+      .filterModalInput{
+       
+        .numberInput{
+          width: 40%;
+        }
+  
+        .searchInput-container {
+          width: 90%;
+
+          .searchInput {
+            width: 90%;
+          }
+  
+          .searchIcon {
+            height: 60%;
+            width: 10%;
+          }
+        }
+      }
+  
+      .filterCheckbox-wrapper {
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+        row-gap: .5rem;
+        column-gap: 15%;
+      }
+    }
+  }
+
+
+
+  @include mobile {
+
+    .filter-modal {
+ 
+      .modal-wrapper {
+          width: 100%;
+          height: 100vh;
+          border-radius: 0;
+          
+        .modal-closeButton-wrapper {
+          width: 100%;
+          display: flex;
+          justify-content: flex-start;
+  
+          .closeButton {
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            background-color: transparent;
+          }
+        }
+      }
+    
+      .modal-content {
+   
+        .unitTypeButton {
+          width: 20%;
+          font-size: .8rem;
+        }
+      }
+  
+      .filterModalInput{
+       
+        .numberInput{
+          width: 40%;
+        }
+  
+        .searchInput-container {
+          width: 90%;
+
+          .searchInput {
+            width: 85%;
+          }
+  
+          .searchIcon {
+            height: 60%;
+            width: 10%;
+          }
+        }
+      }
+  
+      .filterCheckbox-wrapper {
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+        row-gap: .5rem;
+        column-gap: 15%;
+      }
+    }
+  }
+
+
+  @include fold {
+
+    .filter-modal {
+      // width: 100%;
+      // height: 100%;
+      // margin: 0;
+ 
+      .modal-wrapper {
+          // width: 100%;
+          height:100%;
+          position: fixed;
+          top: 0px;
+          bottom: 0px;
+
+          border-radius: 0;
+          
+        .modal-closeButton-wrapper {
+          width: 100%;
+          display: flex;
+          justify-content: flex-start;
+  
+          .closeButton {
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            background-color: transparent;
+          }
+        }
+      }
+    
+      .modal-content {
+   
+        .unitTypeButton {
+          width: 20%;
+        }
+      }
+  
+      .filterModalInput{
+       
+        .numberInput{
+          width: 40%;
+        }
+  
+        .searchInput-container {
+          width: 90%;
+
+          .searchInput {
+            width: 90%;
+          }
+  
+          .searchIcon {
+            height: 60%;
+            width: 10%;
+          }
+        }
+      }
+  
+      .filterCheckbox-wrapper {
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+        row-gap: .5rem;
+        column-gap: 15%;
+      }
+    }
+  }

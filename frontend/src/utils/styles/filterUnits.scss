@@ -1,0 +1,157 @@
+@import '../partials/mixins';
+
+
+  .filterUnitsComponent {
+    padding: 0rem 1rem;
+    height: 3rem;
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20rem;
+    margin: 3rem 0rem 4rem;
+    
+    
+    button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;  
+      background-color: transparent;
+      border: none;
+      justify-content: space-between;
+      border-radius: 0;
+      padding: .3rem;
+      font-size: 1rem;
+      font-weight: 500;
+
+        .collective {
+          font-size: 2rem;
+          position: relative;
+          bottom: .3rem;
+          margin-bottom: .3rem;
+        }
+
+        .filter {
+          font-size: 1.8rem;
+          margin-bottom: .8rem;
+          color: black; 
+        }
+
+        .house {
+          font-size: 1.7rem;
+          margin-bottom: .7rem;
+        }
+
+        .filterIcons {
+          font-size: 1.6rem;
+          margin-bottom: .8rem;
+        }
+      }   
+    }
+    
+
+    @include tablet {
+
+      .filterUnitsComponent {
+        padding: 0rem 1rem;
+        height: 3rem;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20rem;
+        margin: 1.5rem 0rem 2.5rem;
+
+          button {
+              display: flex;
+              flex-direction: column;
+              align-items: center;  
+              background-color: transparent;
+              border: none;
+              justify-content: space-between;
+              border-radius: 0;
+              padding: .3rem;
+              font-size: 1rem;
+              font-weight: 500;
+
+    
+              .collective {
+                font-size: 2rem;
+                position: relative;
+                bottom: .3rem;
+                margin-bottom: .3rem;
+              }
+    
+              .filter {
+                font-size: 1.5rem;
+                margin-bottom: .8rem;
+                color: black;
+             
+
+              }
+    
+              .house {
+                font-size: 1.5rem;
+                margin-bottom: .7rem;
+              }
+    
+              .filterIcons {
+                font-size: 1.4rem;
+                margin-bottom: .8rem;
+              }
+            }   
+          }  
+    } 
+
+
+@include mobile {
+
+  .filterUnitsComponent {
+    padding: 0rem 1rem;
+    height: 3rem;
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20rem;
+    // margin: .5rem 0rem 2.5rem;
+    color: black;
+
+      button {
+          display: flex;
+          flex-direction: column;
+          align-items: center;  
+          background-color: transparent;
+          border: none;
+          justify-content: space-between;
+          border-radius: 0;
+          padding: .3rem;
+          font-size: .9rem;
+          font-weight: 500;
+
+          .collective {
+            font-size: 1.7rem;
+            position: relative;
+            bottom: .3rem;
+            margin-bottom: .3rem;
+          }
+
+          .filter {
+            font-size: 1.3rem;
+            margin-bottom: .8rem;
+            color: black;
+          }
+
+          .house {
+            font-size: 1.3rem;
+            margin-bottom: .7rem;
+          }
+
+          .filterIcons {
+            font-size: 1.3rem;
+            margin-bottom: .8rem;
+          }
+        }   
+      }
+    
+} 

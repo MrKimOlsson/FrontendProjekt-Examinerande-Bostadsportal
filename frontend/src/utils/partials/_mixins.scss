@@ -1,0 +1,58 @@
+
+// Media Query
+$fold-width: 280px;
+$mobile-width: 390px;
+$special-width: 390px;
+$xiomi-width: 435px;
+$tablet-width: 900px;
+$tablet-desktop-width: 1350px;
+$desktop-width: 1440px;
+
+@mixin fold {
+    @media (max-width: #{$fold-width}) {
+      @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: #{$mobile-width}) {
+      @content;
+    }
+}
+
+@mixin special {
+    @media (max-width: #{$special-width}) {
+      @content;
+    }
+}
+
+@mixin xiomi {
+    @media (max-width: #{$xiomi-width}) {
+      @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: #{$tablet-width}) {
+        @content;
+    }
+}
+
+@mixin tablet-desktop {
+  @media (max-width: #{$tablet-desktop-width}) {
+      @content;
+  }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop-width}) {
+      @content;
+    }
+}
+
+@mixin landscape {
+    @media (orientation: landscape) {
+        @content;
+        
+    }
+}

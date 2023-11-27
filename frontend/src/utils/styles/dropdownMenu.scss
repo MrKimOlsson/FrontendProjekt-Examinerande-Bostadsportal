@@ -1,0 +1,99 @@
+/* Dropdown container */
+.dropdownButton {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown toggle button style */
+.dropdown-toggle {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  gap: .4rem;
+  padding: 9px 20px;
+  // border: none;
+  cursor: pointer;
+  
+  
+  &:hover {
+    // transform: rotate(90deg);
+    
+    .userBurger {
+      transform: translateX(.3rem);
+    }
+    
+    .userIcon {
+      transform: rotate(90deg);
+    }
+  }
+}
+
+// /* Dropdown content style */
+.dropdownContent {
+  position: absolute;
+  z-index: 1;
+  transition: max-height 0.3s ease-in-out;
+  
+  .dropdown-close-btn {
+    position: relative;
+    right: 13rem;
+    padding: 1.5rem;
+  }
+}
+
+.dropdown.active .dropdownContent {
+  transition: position 0.3s ease-in-out;  
+}
+
+/* Style list items */
+.dropdown-list {
+  border-top: 1px solid #cdcdcd;
+  list-style-type: none;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+  background-color: rgb(255, 255, 255);
+  margin-top: 16px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 0rem 0rem 1rem 1rem;
+  height: 100vh;
+  overflow: hidden;
+  text-align: left;
+  width: 31rem;
+  position: fixed;
+  right: 0;
+
+  .topBorder {
+    border-top: 1px solid #cdcdcd;
+  }
+}
+
+.dropdown-list.active {
+  transform: translateX(0px);
+}
+
+.dropdown-list.hidden {
+  transform: translateX(2000px);
+}
+
+.dropdown-bottom {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  gap: 2rem;
+  padding: 1.5rem;
+  margin-top: .5rem;
+}
+
+.dropdown-list li {
+  padding: 25px 30px;
+  margin: 0;
+  cursor: pointer;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+/* Hover effect for list items */
+.dropdown-list li:hover {
+  background-color: #f1f1f1;
+}

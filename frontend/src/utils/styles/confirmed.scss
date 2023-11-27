@@ -1,0 +1,281 @@
+@import '../partials/mixins';
+
+.confirmedInfo-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+    width: 50%;
+    margin: 3rem 0rem 10rem;
+    
+    h3 {
+        font-size: 1.5rem;
+        margin-bottom: .5rem;
+        font-weight: 500;
+    }
+
+    h4 {
+        font-size: 1.4rem;
+        margin-bottom: .5rem;
+        font-weight: 500;
+    }
+
+    p {
+        font-size: 1rem;
+        font-weight: 400;
+        width: 90%;
+    }
+
+    .mobileButton {
+        display: none;
+    }
+
+    .infoRow {
+        display: flex;
+        width: 60%; 
+        gap: 1rem;
+        
+        p {
+            font-size: .8rem;
+            margin-top: .5rem;
+            font-weight: 500;
+        }
+
+        .rent {
+            position: relative;
+            right: 1rem;
+        }
+    }
+
+    .confirmedInfo-imageWrapper {
+        height: 337px;
+        
+        .confirmedInfo-image {
+            height: 100%;
+            width: 550px;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .confirmedInfo-text {
+
+        position: relative;
+        bottom: 4rem;
+        
+        h2 {
+            margin-bottom: 0rem;
+            font-weight: 400;
+            line-height: 3.5rem;
+        }
+
+        p {
+            margin: 3rem 0rem 3rem;
+            line-height: 1.3rem;
+        }
+
+        button {
+            height: 2.4rem;
+            width: 10rem;
+        }
+    }
+}
+
+@include tablet {
+    .confirmedInfo-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap-reverse;
+        width: 350px;
+        
+        h4 {
+            display: block;
+            font-size: .8rem;
+            margin-bottom: .5rem;
+            font-weight: 500;
+        }
+        
+        .mobileButton {
+            position: relative;
+            top: 9rem;
+            display: block;
+            display: flex;
+            align-items: center;
+        }
+        
+        .confirmedInfo-imageWrapper {
+            height: 252px;
+            
+            .confirmedInfo-image {
+                height: 100%;
+                width: 350px;
+                border-radius: 10px;
+                margin-bottom: 1rem;
+            }
+            
+            .street {
+                font-size: 1.1rem;
+                font-weight: 600;
+            }
+            
+            .zipcode {
+                display: none;
+            }
+            
+            .area {
+                position: relative;
+                bottom: 4.2rem;
+                left: 5.4rem;
+                font-weight: 600;
+            }
+            
+            .landlord {
+                position: relative;
+                left: 15.6rem;
+                top: .1rem;            
+                width: 7rem; 
+            }
+            
+            .rent {
+                position: relative;
+                right: 6.9rem;
+                bottom: 2rem;
+                font-size: .8rem;
+            }
+
+            .size {
+                position: relative;
+                left: 19.2rem;
+                bottom: 0rem;
+                font-size: .8rem;
+            }
+
+            .rooms {
+                position: relative;
+                right: 3.8rem;
+                bottom: 0rem;
+                font-size: .8rem;
+            }
+        }
+
+
+        .confirmedInfo-text {
+
+            p {
+                margin: 2rem 0rem -5rem;
+                line-height: 1.3rem;
+                font-size: 1.1rem;
+    
+            }
+            h2 {
+                margin-bottom: 0rem;
+                font-weight: 400;
+                line-height: 2.2rem;
+                font-size: 1.8rem;
+            }
+         button {
+            display: none;
+         }   
+        }
+    }
+}
+
+@include mobile {
+
+    .confirmedInfo-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap-reverse;
+
+        h4 {
+            display: block;
+            font-size: .8rem;
+            margin-bottom: .5rem;
+            font-weight: 500;
+        }
+       
+        .mobileButton {
+            position: relative;
+            top: 9rem;
+            display: block;
+            display: flex;
+            align-items: center;
+        }
+
+        .confirmedInfo-imageWrapper {
+            height: 252px;
+
+            .confirmedInfo-image {
+                height: 100%;
+                width: 100%;
+                border-radius: 10px;
+                margin-bottom: 1rem;
+            }
+
+            .street {
+                font-size: 1.1rem;
+                font-weight: 600;
+            }
+
+            .zipcode {
+                display: none;
+            }
+
+            .area {
+                position: relative;
+                bottom: 4.2rem;
+                left: 4.4rem;
+                font-weight: 600;
+            }
+
+            .landlord {
+                position: relative;
+                left: 14.6rem;
+                top: .1rem;
+            }
+
+            .rent {
+                position: relative;
+                right: 6.9rem;
+                bottom: 2rem;
+                font-size: .8rem;
+            }
+
+            .size {
+                position: relative;
+                left: 18.2rem;
+                bottom: 0rem;
+                font-size: .8rem;
+            }
+
+            .rooms {
+                position: relative;
+                right: 3.8rem;
+                bottom: 0rem;
+                font-size: .8rem;
+            }
+        }
+
+        .confirmedInfo-text {
+
+            p {
+                margin: 2rem 0rem -5rem;
+                line-height: 1.3rem;
+                font-size: 1.1rem;
+            }
+
+            h2 {
+                margin-bottom: 0rem;
+                font-weight: 400;
+                line-height: 2.2rem;
+                font-size: 1.8rem;
+            }
+
+            button {
+                display: none;
+            }   
+        }
+    }
+}

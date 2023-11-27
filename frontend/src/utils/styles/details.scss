@@ -1,0 +1,1011 @@
+@import '../partials/mixins';
+
+.detailImagewrapper{
+    display: flex;
+    gap: .5rem;
+    margin-top: 3rem;
+
+    .largeImageContainer{
+        display: flex;
+        flex-direction: row;
+        gap: .5rem;
+    
+        .detailImageLarge{
+            width: 341px;
+            height: 426px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+    }
+    
+    .smallImageContainer{
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    
+        .detailImageSmall{
+            width: 344px;
+            height: 210px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+    }
+}    
+
+.DetailsInfoWrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 2rem 0rem .5rem 0rem;
+    
+    #moneyIcon {
+        opacity: 70%;    
+    }
+
+    #mapIcon {
+        display: flex;
+        font-size: 1.7rem;
+        gap: 0rem;        
+    }
+
+    #mapIconItem {
+        display: flex;
+        flex-direction: column;
+        gap: .2rem;
+        justify-content: center;
+        align-items: center;  
+    }
+    
+    .item{
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        min-width: 80px;
+        justify-content: center;
+        align-items: center;
+        padding: 0rem 1.2rem;
+    }
+    
+    .filterIcons {
+        font-size: 1.5rem;
+        color: #000000b5;
+    }
+    
+    .rentIcon {
+        fill: #b30000;
+        font-size: 1.5rem;   
+    }
+    
+    .verticalDivider {
+        width: .5px;
+        height: 50px;
+        background-color: #00000037;
+    }
+}
+
+.ImageRow {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1.5rem;
+    width: 100%;
+    margin: 2rem 0rem;
+
+    .rowItem {
+        width: 244px;
+        height: 301px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+}
+
+.detailsTextWrapper {
+    display: flex;
+    padding: 0rem 3rem;
+    gap: 6rem;
+    margin: 0rem 0rem 5rem 0rem;
+    justify-content: center;
+    
+    .detailsText {
+        width: 590px;
+        
+
+        h2 {
+            margin: 0rem 0rem 3rem;
+            font-size: 3.5rem;
+            font-weight: 400;
+        }
+
+        .subTitle {
+            display: flex;
+            flex-direction: row;
+            color: #555555;
+            text-align: flex-start;
+            gap: 2rem;
+            
+            
+            h3 {
+              font-weight: 400;
+              text-align: left;
+              font-style: italic;
+              margin: 0;
+            }
+
+            .verticalDivider {
+                width: 1px;
+                height: 30px;
+                background-color: #C0C0C0;
+            }
+          }
+        
+        .title {
+            font-weight: 400;
+            margin: 3rem 0rem 1rem;
+        }
+    }
+
+    .infoCardContainer {
+        display: flex;
+        flex-direction: column;
+
+        .logo {
+            width: 213px;
+            margin: 10rem 0rem 1rem;
+        }
+
+        .infoCard{
+            width: 404px;
+            height: 427px;
+            background-color: #E9E9E9;
+            border-radius: 10px;
+            padding: 1rem 2rem;
+            
+            .title {
+                margin: 0rem 0rem 1.5rem 0rem;
+                font-weight: 500;
+                font-size: 1.3rem;
+            }
+            
+            .text{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+
+            .buttons {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+                margin-top: 2rem;
+
+                button{
+                    padding: .8rem 0rem;
+                    width: 170px;
+                }
+            }
+        }
+
+        .overviewText {
+            margin: 1.5rem 0rem 1.5rem;
+        }
+            
+        .includes{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            font-size: .9rem;
+            margin: 1.5rem 0rem; 
+            width: 404px;
+            padding: 1rem;
+
+            .includes-item {
+                flex: 1 1 80px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+                .includes-item {
+        
+                    .icon {
+                        font-size: 1.5rem;
+                    }
+                }
+        }
+
+        .OverviewIcon{
+            font-size: 2rem;
+            margin-bottom: .4rem;
+        }
+    }
+}
+
+.residentialMobileImage {
+    width: 350px;
+    height: 243px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 1rem 0rem 0rem;
+}
+
+.star{
+    display: flex;
+    margin-top: .2rem;
+    gap: .4rem;
+}
+
+.ratingCard {
+    padding: .5rem;
+    border-bottom: 1px solid #cfcfcf;
+  }
+  
+  .star-row {
+    color: #E78121;
+  }
+  
+  .star {
+    color: #E78121;
+  }
+    
+  .mobileView {
+    display: none;
+  }
+
+
+
+
+  @include tablet-desktop {
+
+    .detailImagewrapper{
+        display: flex;
+        gap: .5rem;
+        margin-top: 3rem;
+    
+        .largeImageContainer{
+            display: flex;
+            flex-direction: row;
+            gap: .5rem;
+        
+            .detailImageLarge{
+                width: 241px;
+                height: 328px;
+                border-radius: 10px;
+                object-fit: cover;
+            }
+        }
+        
+        .smallImageContainer{
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+        
+            .detailImageSmall{
+                width: 244px;
+                height: 160px;
+                border-radius: 10px;
+                object-fit: cover;
+            }
+        }
+    }    
+    
+    .DetailsInfoWrapper{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 2rem 0rem .5rem 0rem;
+        font-size: .8rem;
+        
+        #moneyIcon {
+            opacity: 70%; 
+        }
+    
+        #mapIcon {
+            display: flex;
+            font-size: 1.3rem;
+            gap: 0rem;       
+        }
+    
+        #mapIconItem {
+            display: flex;
+            flex-direction: column;
+            gap: .2rem;
+            width: 160px;
+            justify-content: center;
+            align-items: center;      
+        }
+        
+        .item{
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+            min-width: 80px;
+            justify-content: center;
+            align-items: center;
+            padding: 0rem 1.1rem;
+        }
+        
+        .filterIcons {
+            font-size: 1.2rem;
+            color: #000000b5; 
+        }
+        
+        .rentIcon {
+            fill: #b30000;
+            font-size: 1.5rem;   
+        }
+        
+        .verticalDivider {
+            width: .5px;
+            height: 50px;
+            background-color: #00000037;
+        }
+    }
+    
+    .ImageRow {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: .5rem;
+        width: 100%;
+        margin: 2rem 0rem;
+    
+        .rowItem {
+            width: 180px;
+            height: 250px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+    }
+    
+    .detailsTextWrapper {
+        display: flex;
+        align-items: center;
+        padding: 0rem 0rem;
+        gap: 3rem;
+        margin: 0rem 0rem 5rem 0rem;
+        justify-content: center;
+        width: 100%;
+        // background-color: #b30000;
+        
+        .detailsText {
+            width: 30%;
+    
+            h2 {
+                margin: 0rem 0rem 3rem;
+                font-size: 2.5rem;
+                font-weight: 400;
+            }
+    
+            .subTitle {
+                display: flex;
+                flex-direction: row;
+                color: #555555;
+                text-align: flex-start;
+                gap: 2rem;
+                
+                
+                h3 {
+                  font-weight: 400;
+                  text-align: left;
+                  font-style: italic;
+                  margin: 0;
+                }
+    
+                .verticalDivider {
+                    width: 1px;
+                    height: 30px;
+                    background-color: #C0C0C0;
+                }
+              }
+            
+            .title {
+                font-weight: 400;
+                margin: 3rem 0rem 1rem;
+            }
+        }
+    
+        .infoCardContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            position: relative;
+            left: 2rem;
+    
+            .logo {
+                width: 213px;
+                margin: 10rem 0rem 1rem 0rem;
+            }
+    
+            .infoCard{
+                width: 304px;
+                height: 427px;
+                background-color: #E9E9E9;
+                border-radius: 10px;
+                padding: 1rem 1rem;
+                
+                .title {
+                    margin: 0rem 0rem 1.5rem 0rem;
+                    font-weight: 500;
+                    font-size: 1.3rem;
+                }
+                
+                .text{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+    
+    
+                .buttons {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 1rem;
+                    margin-top: 2rem;
+    
+                    button{
+                        padding: .8rem 0rem;
+                        width: 170px;
+                    }
+                }
+            }
+    
+            .overviewText {
+                margin: 1.5rem 0rem 1.5rem;
+            }
+                
+            .includes{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 2rem;
+                font-size: .9rem;
+                margin: 1.5rem 0rem; 
+                width: 100%;
+                padding: 1rem;
+    
+                .includes-item {
+                    flex: 1 1 80px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    
+                }
+                    .includes-item {
+            
+                        .icon {
+                            font-size: 1.5rem;
+                        }
+                    }
+            }
+    
+            .OverviewIcon{
+                font-size: 2rem;
+                margin-bottom: .4rem;
+            }
+        }
+    }
+    
+    .residentialMobileImage {
+        width: 21.875rem;
+        height: 243px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin: 1rem 0rem 0rem;
+    }
+    
+    .star{
+        display: flex;
+        margin-top: .2rem;
+        gap: .4rem;
+    }
+    
+    .ratingCard {
+        padding: .5rem;
+        border-bottom: 1px solid #cfcfcf;
+      }
+      
+      .star-row {
+        color: #E78121;
+      }
+      
+      .star {
+        color: #E78121;
+      }
+        
+      .mobileView {
+        display: none;
+      }
+  }
+
+
+
+  @include tablet {
+
+    .detailImagewrapper{
+        display: none;
+    }    
+
+    .DetailsInfoWrapper{
+        display: none;
+    }
+
+    .ImageRow {
+        display: none;
+    }
+
+    .reviewBox {
+        display: none;
+    }
+
+    .rating {
+        display: none;
+    }
+
+    .landlord {
+        display: none;
+    }
+    
+
+    .logo {
+        display: none;
+    }
+
+
+    .mobileView {
+        display: flex;
+      }
+
+      .detailsTextWrapper {
+          padding: 0rem 0rem;
+          gap: 0rem;
+          margin: 0rem 0rem 0rem 0rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          width: 420px;
+          font-size: .8rem;
+          padding: 0rem 0rem 0rem 0rem;
+
+        .infoCardContainer {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            margin: 1rem;
+            padding: 0rem 0rem 0rem 0rem;
+            position: relative;
+            left: 0rem;
+
+            
+            .infoCard{
+                width: 352px;
+                height: 244px;
+                background-color: #f2f2f2;
+                border-radius: 10px;
+                padding: 1.2rem 1.5rem 0rem 1.5rem;
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                justify-content: flex-start;
+                
+                .title {
+                    margin: 0rem 0rem 0.5rem 0rem;
+                    font-weight: 500;
+                    font-size: 1rem;
+                    padding: 0rem 0rem 0rem 0rem;
+
+                }
+                
+                .thick {
+                    font-weight: 600;
+                }
+                
+                .text{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    font-size: 0.8125rem;
+                    padding: 0rem 0rem 0rem 0rem;
+
+                }
+    
+    
+                .buttons {
+                    
+                    button{
+                        position: relative;
+                        bottom: 3rem;
+                        padding: .8rem 0rem;
+                        width: 170px;
+                        height: 2.2rem;
+                        margin-top: .7rem;
+                    }
+                }
+            }
+
+            .overviewText {
+                margin: 1rem 0rem 1.5rem;
+            }
+        }
+        
+        .detailsText {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            justify-content: center;
+            text-align: left;
+            width: 80%;
+            margin: 3rem 0rem 0rem;
+    
+            h2 {
+                margin: 0rem 0rem 2rem;
+                font-size: 25px;
+                font-weight: 400;
+            }
+                
+            .title {
+                font-weight: 400;
+                margin: 2rem 0rem 2rem;
+            }
+
+            .subTitle {
+                display: flex;
+                flex-direction: row;
+                color: #555555;
+                justify-content: flex-start;
+                text-align: center;
+                gap: 1rem;
+                
+                
+                h3 {
+                  font-weight: 400;
+                  text-align: left;
+                  font-style: italic;
+                  margin: 0;
+                }
+    
+                .verticalDivider {
+                    width: 1px;
+                    height: 20px;
+                    background-color: #c0c0c090;
+                }
+              }
+            
+          
+        }
+
+    }
+  }
+
+
+  @include mobile {
+
+    .detailImagewrapper{
+        display: none;
+    }    
+
+    .DetailsInfoWrapper{
+        display: none;
+    }
+
+    .ImageRow {
+        display: none;
+    }
+
+    .reviewBox {
+        display: none;
+    }
+
+    .rating {
+        display: none;
+    }
+
+    .landlord {
+        display: none;
+    }
+    
+
+    .logo {
+        display: none;
+    }
+
+
+    .mobileView {
+        display: flex;
+      }
+
+      .detailsTextWrapper {
+          padding: 0rem 0rem;
+          gap: 0rem;
+          margin: 0rem 0rem 0rem 0rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          width: 100%;
+          font-size: .8rem;
+          padding: 0rem 0rem 0rem 0rem;
+
+        .infoCardContainer {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            margin: 1rem;
+            padding: 0rem 0rem 0rem 0rem;
+            width: 100%;
+            // background-color: #b30000;
+ 
+
+            
+            .infoCard{
+                width: 90%;
+                // height: 244px;
+                background-color: #f2f2f2;
+                border-radius: 10px;
+                padding: 1.2rem 1rem 0rem 1rem;
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                justify-content: flex-start;
+                
+                .title {
+                    margin: 0rem 0rem 0.5rem 0rem;
+                    font-weight: 500;
+                    font-size: 1rem;
+                    padding: 0rem 0rem 0rem 0rem;
+
+                }
+                
+                .thick {
+                    font-weight: 600;
+                }
+                
+                .text{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    font-size: 0.8125rem;
+                    padding: 0rem 0rem 0rem 0rem;
+
+                }
+    
+    
+                .buttons {
+                    
+                    button{
+                        position: relative;
+                        bottom: 3rem;
+                        padding: .8rem 0rem;
+                        width: 170px;
+                        height: 2.2rem;
+                        margin-top: .7rem;
+                    }
+                }
+            }
+
+            .overviewText {
+                margin: 1rem 0rem 1.5rem;
+            }
+        }
+        
+        .detailsText {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            justify-content: center;
+            text-align: left;
+            width: 80%;
+            margin: 3rem 0rem 0rem;
+    
+            h2 {
+                margin: 0rem 0rem 2rem;
+                font-size: 25px;
+                font-weight: 400;
+            }
+                
+            .title {
+                font-weight: 400;
+                margin: 2rem 0rem 2rem;
+            }
+
+            .subTitle {
+                display: flex;
+                flex-direction: row;
+                color: #555555;
+                justify-content: flex-start;
+                text-align: center;
+                gap: 1rem;
+                
+                
+                h3 {
+                  font-weight: 400;
+                  text-align: left;
+                  font-style: italic;
+                  margin: 0;
+                }
+    
+                .verticalDivider {
+                    width: 1px;
+                    height: 20px;
+                    background-color: #c0c0c090;
+                }
+              }          
+        }
+    }
+  }
+
+
+  @include fold {
+
+    .detailImagewrapper{
+        display: none;
+    }    
+
+    .DetailsInfoWrapper{
+        display: none;
+    }
+
+    .ImageRow {
+        display: none;
+    }
+
+    .reviewBox {
+        display: none;
+    }
+
+    .rating {
+        display: none;
+    }
+
+    .landlord {
+        display: none;
+    }
+    
+
+    .logo {
+        display: none;
+    }
+
+
+    .mobileView {
+        display: flex;
+      }
+
+      .detailsTextWrapper {
+          padding: 0rem 0rem;
+          gap: 0rem;
+          margin: 0rem 0rem 0rem 0rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          width: 100%;
+          font-size: .8rem;
+          padding: 0rem 0rem 0rem 0rem;
+
+        .infoCardContainer {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            margin: 1rem;
+            padding: 0rem 0rem 0rem 0rem;
+            width: 100%;
+            // background-color: #b30000;
+ 
+
+            
+            .infoCard{
+                width: 90%;
+                // height: 244px;
+                background-color: #f2f2f2;
+                border-radius: 10px;
+                padding: 1.2rem 1rem 0rem 1rem;
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                justify-content: flex-start;
+                
+                .title {
+                    margin: 0rem 0rem 0.5rem 0rem;
+                    font-weight: 500;
+                    font-size: 1rem;
+                    padding: 0rem 0rem 0rem 0rem;
+
+                }
+                
+                .thick {
+                    font-weight: 600;
+                }
+                
+                .text{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    font-size: 0.8125rem;
+                    padding: 0rem 0rem 0rem 0rem;
+
+                }
+    
+    
+                .buttons {
+                    
+                    button{
+                        position: relative;
+                        bottom: 3rem;
+                        padding: .8rem 0rem;
+                        width: 170px;
+                        height: 2.2rem;
+                        margin-top: .7rem;
+                    }
+                }
+            }
+
+            .overviewText {
+                margin: 1rem 0rem 1.5rem;
+            }
+        }
+        
+        .detailsText {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            justify-content: center;
+            text-align: left;
+            width: 80%;
+            margin: 3rem 0rem 0rem;
+    
+            h2 {
+                margin: 0rem 0rem 2rem;
+                font-size: 25px;
+                font-weight: 400;
+            }
+                
+            .title {
+                font-weight: 400;
+                margin: 2rem 0rem 2rem;
+            }
+
+            .subTitle {
+                display: flex;
+                flex-direction: row;
+                color: #555555;
+                justify-content: flex-start;
+                text-align: center;
+                gap: 1rem;
+                
+                
+                h3 {
+                  font-weight: 400;
+                  text-align: left;
+                  font-style: italic;
+                  margin: 0;
+                }
+    
+                .verticalDivider {
+                    width: 1px;
+                    height: 20px;
+                    background-color: #c0c0c090;
+                }
+            }          
+        }
+    }
+  }

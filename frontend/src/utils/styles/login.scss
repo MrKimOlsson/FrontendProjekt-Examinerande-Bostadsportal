@@ -1,0 +1,182 @@
+@import '../partials/mixins';
+
+.loginText {
+    margin: 1rem 0rem;
+    // line-height: 3rem;
+    line-height: 1.5rem;
+
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+       
+    h2 {
+        font-size: 51px;
+        font-weight: 400;
+        margin-bottom: 2.6rem;
+    }
+}
+
+
+
+.loginForm {
+    line-height: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // margin-top: -4rem;
+
+    p {
+        font-size:1rem;
+        font-weight: 500;
+        margin: 1.5rem 0rem 2rem;
+    }
+    
+    
+    .inputSection {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 4rem;
+        
+        .form-group {
+            
+            input {
+                padding-left: 1.5rem;
+                font-size: 1rem;
+                height: 51px;
+                width: 333px;
+                background-color: #F2F2F2;
+                border: none;
+                border-radius: 5px;
+            }
+        }
+    }
+    
+    .buttonWrapper {
+        display: flex;
+        justify-content: center;
+        margin: 2rem 0rem;
+
+        button {
+            border-radius: 3rem;
+            color: #fff;
+        }
+    }
+
+    .registerText {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+        font-size: 1rem;
+        line-height: 0;
+
+        a {
+            text-decoration: none;
+            color: #000;
+            
+        }
+        
+        .bold {
+            font-weight: bold;
+        }
+
+        .toprow {
+            margin: 2rem 0rem .5rem;
+        }
+    }
+
+}
+
+@include tablet {
+    .loginText {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+        
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 400;
+            margin-bottom: 1.6rem;
+        }
+    }
+    
+    .loginForm {
+        text-align: flex-start;
+        
+        .inputSection {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+
+
+@include mobile {
+    .loginText {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+
+        h2 {
+            font-size: 1.6rem;
+            font-weight: 400;
+            margin-bottom: .6rem;
+        }
+    }
+
+    .loginForm {
+        align-items: start;
+        
+        
+       
+        .inputSection {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+       
+    }
+}
+
+@include fold {
+    .loginText {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+
+        h2 {
+            font-size: 1.6rem;
+            font-weight: 400;
+            margin-bottom: .6rem;
+        }
+    }
+
+    .loginForm {
+        align-items: start;
+        
+        
+       
+        .inputSection {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+       
+    }
+}
